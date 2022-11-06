@@ -11,6 +11,11 @@ class ProductsController {
     const productCreated = await this.productsService.create(product);
     res.status(statusCodes.CREATED).json(productCreated);
   };
+
+  public getAll = async (_req: Request, res: Response) => {
+    const productCreated = await this.productsService.getAll();
+    res.status(statusCodes.OK).json(productCreated);
+  };
 }
 
 export default ProductsController;

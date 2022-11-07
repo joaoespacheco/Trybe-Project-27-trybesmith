@@ -1,5 +1,7 @@
+import { statusCodes } from '../utils/statusCodes';
+
 export default interface IValidateReturn {
-  type: string;
+  type: keyof typeof statusCodes;
   value: { 
     token?: string,
     message?: string 

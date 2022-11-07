@@ -7,18 +7,6 @@ const statusCodes = {
   NO_CONTENT: 204,
 };
 
-const mapStatusCode = (errorStatus: string): number => {
-  switch (errorStatus) {
-    case 'UNAUTHORIZED':
-      return statusCodes.UNAUTHORIZED;
-    case 'CREATED':
-      return statusCodes.CREATED;
-    case 'BAD_REQUEST':
-      return statusCodes.BAD_REQUEST;
-      
-    default:
-      return statusCodes.OK;
-  }
-};
+const mapStatusCode = (errorStatus: keyof typeof statusCodes): number => statusCodes[errorStatus];
 
 export { mapStatusCode, statusCodes };

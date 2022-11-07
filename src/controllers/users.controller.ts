@@ -8,8 +8,8 @@ class UsersController {
   public create = async (req: Request, res: Response) => {
     const user = req.body;
 
-    const userCreated = await this.usersService.create(user);
-    res.status(mapStatusCode('CREATED')).json({ token: userCreated });
+    const { type, value } = await this.usersService.create(user);
+    res.status(mapStatusCode(type)).json({ ...value });
   };
 }
 

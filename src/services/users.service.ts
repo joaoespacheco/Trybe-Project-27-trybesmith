@@ -1,6 +1,8 @@
+import Token from '../utils/jwl';
 import UsersModel from '../models/users.model';
 import { IUser } from '../interfaces/user.interface';
-import Token from '../utils/jwl';
+import validateReturn from '../interfaces/validateReturn.interface';
+import { validateUser } from './validations/validationsInputsValues';
 
 class ProductsService {
   public model: UsersModel;
@@ -9,11 +11,15 @@ class ProductsService {
     this.model = new UsersModel();
   }
 
-  public async create(user: IUser): Promise<string> {
+  public async create(user: IUser): Promise<validateReturn> {
+    const validateBody = validateUser(user);
+    const { type, value } = validateBody;
+    if (type !== 'OK') return { type, value };
+
     const created = await this.model.create(user);
     const [newUser] = await this.model.getUserById(created.insertId);
     const token = new Token().generateToken(newUser);
-    return token;
+    return { type: 'CREATED', value: { token } };
   }
 }
 

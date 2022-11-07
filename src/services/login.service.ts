@@ -2,7 +2,7 @@ import UserModel from '../models/users.model';
 import { ILogin } from '../interfaces/user.interface';
 import validateReturn from '../interfaces/validateReturn.interface';
 import Token from '../utils/jwl';
-import validations from './validations/validationsInputsValues';
+import { validateLogin } from './validations/validationsInputsValues';
 
 class LoginService {
   public model: UserModel;
@@ -12,7 +12,7 @@ class LoginService {
   }
 
   public async login(userLogin: ILogin): Promise<validateReturn> {
-    const validateBody = validations(userLogin);
+    const validateBody = validateLogin(userLogin);
     const { type, value } = validateBody;
     if (type !== 'OK') return { type, value };
 

@@ -7,4 +7,18 @@ const statusCodes = {
   NO_CONTENT: 204,
 };
 
-export default statusCodes;
+const mapStatusCode = (errorStatus: string): number => {
+  switch (errorStatus) {
+    case 'UNAUTHORIZED':
+      return statusCodes.UNAUTHORIZED;
+    case 'CREATED':
+      return statusCodes.CREATED;
+    case 'BAD_REQUEST':
+      return statusCodes.BAD_REQUEST;
+      
+    default:
+      return statusCodes.OK;
+  }
+};
+
+export { mapStatusCode, statusCodes };

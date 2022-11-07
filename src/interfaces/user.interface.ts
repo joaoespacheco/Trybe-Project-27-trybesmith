@@ -1,7 +1,15 @@
-export default interface IUser {
-  id?: number;
+interface ILogin {
   username: string;
-  classe: string;
-  level: number;
   password?: string;
 }
+
+interface IUser extends ILogin {
+  id?: number;
+  classe: string;
+  level: number;
+}
+
+export {
+  ILogin,
+  IUser,
+};

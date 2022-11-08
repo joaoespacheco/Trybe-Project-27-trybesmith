@@ -1,4 +1,4 @@
 export default interface ICreateDb {
-  affectedRows: number;
+  affectedRows?: number;
   insertId: number;
 }

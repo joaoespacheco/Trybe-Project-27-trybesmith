@@ -17,7 +17,7 @@ class ProductsService {
 
     const newProduct = await this.model.create(product);
     
-    return { type: 'OK', value: { ...newProduct } };
+    return { type: 'CREATED', value: { ...newProduct } };
   }
 
   public getAll(): Promise<Product[]> {

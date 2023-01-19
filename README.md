@@ -42,56 +42,60 @@ Aprovado com 100% de desempenho em todos os requisitos
 </details>
 </br>
 
+## ⚙️ Execução
+
+Para executar a aplicação inicie realizando o clone deste repositório com o comando abaixo.
+
+      git clone git@github.com:joaoespacheco/Trybe-Project.27-trybesmith.git
+
+Navegue até a raíz do projeto.
+
+      cd Trybe-Project-27-trybesmith/
+      
+Uma vez na raiz do projeto, execute o comando abaixo para instalar as dependências do projeto.
+    
+    npm install
+<br/>
+
+<details>
+   <summary><strong>Rodando a aplicação com o Docker</strong></summary>
+  </br>
+
+   Na pasta app do projeto, suba o container <strong>talker_manager</strong> utilizando o docker-compose.yml. Utilize o comando abaixo.
+
+        docker-compose up -d
+
+   Entre no terminal do container
+
+        docker exec -it trybesmith bash
+
+   Caso não tenha instalado anteriormente, uma vez no terminal do container, execute o comando abaixo para instalar as dependências do projeto.
+
+        npm install
+
+   Para iniciar o servidor utilize o seguinte comando no terminal do container
+
+        npm run start
+        
+   Para iniciar o servidor no modo de desenvolvimento utilize o seguinte comando no terminal do container
+
+        npm run dev
+        
+</details>
+</br>
+
 ## ↪️ Rotas:
-### Login:
-<details>
-<summary><strong>POST /login</strong></summary>
- 
-Esta rota é responsável por fazer o login na API </br>
-> * Se bem-sucedido, retorna status 200 e um token
 
-</details>
+A documentação referente as rotas foi confeccionada utilizando a ferramenta Swagger/OpenAPI e pode ser visualizada de duas maneiras:
 
-### Users:
-<details>
-<summary><strong>POST /users</strong></summary>
+### Acessando as informações das rotas localmente:
+A documentação das rotas pode ser acessada após iniciar a aplicação localmente de acordo com as instruções da seção anterior chamada "Execução". </br> 
+</br>
+Para visualizar as rotas e testar as requisições você pode utilizar a rota http://localhost:3000/api-docs. Caso preferir, você também pode utilizar um cliente de requisições HTTP de sua preferência (Insomnia, Thunder Client, etc) para realizar os testes.
 
-Cadastra um usuário no banco de dados </br>
-> * Se bem-sucedido, retorna status 200 e um token
-
-</details>
-
-### Orders:
-<details>
-<summary><strong>GET /orders</strong></summary>
-
-Lista todas os pedidos de compra cadastrados no banco de dados </br>
-> * Se bem-sucedido, retorna status 200 e um array contendo todos os pedidos de compra cadastrados
-
-</details>
-<details>
-<summary><strong>POST /orders</strong></summary>
-
-Cadastra um novo pedido no banco de dados </br>
-> * Se bem-sucedido, retorna status 201 e um objeto contendo as informações do novo pedido
-
-</details>
-
-### Products:
-<details>
-<summary><strong>GET /products</strong></summary>
-
-Lista todas os produtos cadastrados no banco de dados </br>
-> * Se bem-sucedido, retorna status 200 e um array contendo as informações de todas os produtos cadastrados
-
-</details>
-<details>
-<summary><strong>POST /products</strong></summary>
-
-Cadastra uma novo produto no banco de dados </br>
-> * Se bem-sucedido, retorna status 201 e um objeto contendo as informações do novo produto
-
-</details>
+### Acessando as informações das rotas online:
+Para visualizar as rotas você pode utilizar a plataforma Swagger Viewer <strong>[clicando aqui](https://swaggerviewer.ptr.red/spec/aHR0cHM6Ly9naXRodWIuY29tL2pvYW9lc3BhY2hlY28vVHJ5YmUtUHJvamVjdC0yNC10YWxrZXItbWFuYWdlci9yYXcvbWFpbi9zcmMvc3dhZ2dlci5qc29u)</strong>.
+      
 </br>
 
 ## 🤹🏽 Habilidades Desenvolvidas:

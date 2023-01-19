@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "Trybesmith",
-    "description": "API para gerenciamento de itens e vendas em uma loja medieval de um jogo. Para acessar as rotas autenticadas, faça login ou crie um novo usuário para receber o token de acesso.",
+    "description": "API para gerenciamento de itens e vendas de uma loja medieval em um jogo. Para acessar as rotas autenticadas, faça login ou crie um novo usuário para receber o token de acesso.",
     "contact": {
       "email": "joaoe.pacheco@gmail.com"
     },

@@ -66,23 +66,23 @@ Uma vez na raiz do projeto, execute o comando abaixo para instalar as dependênc
 
    Na pasta app do projeto, suba o container <strong>talker_manager</strong> utilizando o docker-compose.yml. Utilize o comando abaixo.
 
-      docker-compose up -d
+    docker-compose up -d
 
    Entre no terminal do container
 
-      docker exec -it trybesmith bash
+    docker exec -it trybesmith bash
 
    Caso não tenha instalado anteriormente, uma vez no terminal do container, execute o comando abaixo para instalar as dependências do projeto.
 
-      npm install
+    npm install
 
    Para iniciar o servidor utilize o seguinte comando no terminal do container
 
-      npm run start
+    npm run start
         
    Para iniciar o servidor no modo de desenvolvimento utilize o seguinte comando no terminal do container
 
-      npm run dev
+    npm run dev
         
 </details>
 </br>

@@ -15,7 +15,9 @@ Para as funções de autenticação foi utilizado a ferramenta <strong>JSON Web 
 <details>
 <summary><strong>Desempenho</strong></summary>
 Aprovado com 100% de desempenho em todos os requisitos
+ 
 ![image](https://user-images.githubusercontent.com/99846604/213574698-cbc4216e-a63c-4ed8-9a2b-81e17614f205.png)
+ 
 </details>
 
 <details>

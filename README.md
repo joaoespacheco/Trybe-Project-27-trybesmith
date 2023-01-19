@@ -4,7 +4,7 @@
 
 Projeto desenvolvido durante o módulo de back-end do curso de desenvolvimento web da [Trybe](https://www.betrybe.com/).
 
-Neste projeto foi desenvolvida uma API RESTful de gerenciamento de uma loja de itens medievais. O desenvolvimento foi feito utilizando <strong>TypeScript</strong> e arquitetura <strong>MSC (model-service-controller)</strong>.
+Neste projeto foi desenvolvida uma API RESTful de gerenciamento de items e vendas em uma loja medieval de um jogo. O desenvolvimento foi feito utilizando <strong>TypeScript</strong> e arquitetura <strong>MSC (model-service-controller)</strong>.
 
 Para a aplicação foi utilizado um banco de dados <strong>MySQL</strong>.
 
